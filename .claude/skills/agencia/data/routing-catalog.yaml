@@ -1,0 +1,39 @@
+# Routing Catalog — AgencIA
+# Referenciado por tasks/diagnose.md. Mapeia a demanda ao especialista certo.
+
+domains:
+  mensagem_posicionamento:
+    keywords: [mensagem, posicionamento, marca, one-liner, proposta de valor, oferta confusa, funil, nutrição]
+    primary_agent: branding
+    secondary_agent: copy
+    description: "Definir o que a marca diz e para quem — a espinha da campanha."
+
+  copywriting:
+    keywords: [copy, headline, título, carta de vendas, sales page, vsl, e-mail, bullets, mecanismo, anúncio, consciência]
+    primary_agent: copy
+    secondary_agent: branding
+    description: "As palavras que vendem, calibradas ao nível de consciência do mercado."
+
+  criativo_visual:
+    keywords: [criativo, visual, imagem, thumbnail, banner, identidade, logo, ilustração, prompt, midjourney, social]
+    primary_agent: design
+    secondary_agent: copy
+    description: "Os assets visuais — criativos de anúncio, identidade, prompts de IA."
+
+  trafego_pago:
+    keywords: [tráfego, meta ads, facebook, instagram, anúncio pago, público, orçamento, cbo, abo, escala, gestor, lançamento]
+    primary_agent: trafego
+    secondary_agent: design
+    description: "Distribuição e escala via tráfego pago — foco Meta Ads, PT-BR."
+
+  campanha_completa:
+    keywords: [campanha, campanha completa, marketing completo, do zero, ponta a ponta]
+    primary_agent: orquestrador
+    secondary_agent: null
+    description: "Campanha ponta a ponta — dispara o workflow *campaign (as 4 disciplinas em sequência)."
+
+  lancamento:
+    keywords: [lançamento, lançar, abertura de carrinho, semana de lançamento, ondas]
+    primary_agent: orquestrador
+    secondary_agent: trafego
+    description: "Lançamento de produto/oferta — dispara o workflow *launch (campanha em ondas)."

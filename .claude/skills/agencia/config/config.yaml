@@ -1,0 +1,45 @@
+# ═══════════════════════════════════════════════════════════════════
+# AgencIA — Agência de marketing em agentes de IA
+# Version: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: agencia
+  display_name: "AgencIA"
+  version: "1.0.0"
+  domain: "Marketing de ponta a ponta — o melhor de cada disciplina, orquestrado numa linha de montagem: mensagem → copy → criativo → distribuição"
+  keywords: [marketing, branding, copywriting, design, tráfego pago, meta ads, campanha, lançamento, funil]
+  entry_agent: orquestrador
+  created_at: "2026-07-08"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [orquestrador]
+    purpose: "Diagnostica a demanda, roteia para a disciplina certa, sequencia a campanha e revisa a qualidade entre handoffs"
+  tier_1:
+    name: "Especialistas"
+    agents: [branding, copy, design, trafego]
+    purpose: "O melhor de cada disciplina de marketing"
+
+agents:
+  orquestrador: { file: orquestrador.md, tier: 0, icon: "🎯", focus: "Orquestração, roteamento, sequenciamento de campanha, QA" }
+  branding:     { file: branding.md,     tier: 1, icon: "📖", focus: "Mensagem/posicionamento — roteiro de marca, one-liner, funil" }
+  copy:         { file: copy.md,         tier: 1, icon: "🧠", focus: "Copy — níveis de consciência, headline, mecanismo, VSL" }
+  design:       { file: design.md,       tier: 1, icon: "🎨", focus: "Criativo/visual — prompts de IA, anúncios, identidade" }
+  trafego:      { file: trafego.md,      tier: 1, icon: "🚦", focus: "Tráfego pago — Meta Ads, públicos, orçamento, lançamento" }
+
+handoffs:
+  branding: { routes_to: [copy],    escalates_to: [orquestrador] }
+  copy:     { routes_to: [design],  escalates_to: [orquestrador] }
+  design:   { routes_to: [trafego], escalates_to: [orquestrador] }
+  trafego:  { routes_to: [orquestrador], escalates_to: [orquestrador] }
+
+cross_cutting:
+  quality_standards: { min_score: 7.0, reviewer: orquestrador }
+  assembly_line: [branding, copy, design, trafego]
+
+settings:
+  activation:
+    prefix: "@agencia"
+    example: "@agencia:orquestrador"

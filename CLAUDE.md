@@ -21,6 +21,7 @@ Também estão instaladas 15 equipes do Xquads em `.claude/skills/` (marketing, 
 Divisão de trabalho:
 - criar ou mexer em app, sistema, site, agente ou automação → Builder Squad;
 - marketing, vendas, comunicação, marca e estratégia de negócio → Xquads;
+- campanha completa ou lançamento de ponta a ponta (mensagem → copy → criativo → tráfego) → skill `agencia` (AgencIA), que conduz as etapas em sequência; pedidos pontuais de marketing (um texto, um anúncio, a marca, uma oferta) continuam no Xquads;
 - se o projeto precisar dos dois (ex.: lançar um app no mercado), o Builder Squad conduz e chama o Xquads para a parte de marketing e copy.
 
 Fale sempre em português simples, sem jargão técnico; quando um termo técnico for inevitável, explique-o em poucas palavras.

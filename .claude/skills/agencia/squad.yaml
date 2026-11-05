@@ -1,0 +1,52 @@
+name: agencia
+version: "1.0.0"
+short-title: "AgencIA"
+description: "AgencIA — uma agência de marketing completa em agentes de IA. Reúne o melhor de cada disciplina sob um orquestrador: Branding, Copy, Design e Tráfego. Roda campanhas de ponta a ponta com workflows pré-definidos: mensagem → copy → criativo → distribuição."
+author: "ohmyjahh"
+license: MIT
+slashPrefix: "agencia"
+
+aios:
+  minVersion: "4.0.0"
+  type: squad
+
+tags:
+  - marketing
+  - branding
+  - copywriting
+  - design
+  - trafego-pago
+  - meta-ads
+  - campanha
+  - lancamento
+  - funil
+  - agencia
+
+components:
+  agents:
+    - orquestrador.md    # Tier 0 — orquestrador
+    - branding.md        # mensagem / posicionamento
+    - copy.md            # copywriting
+    - design.md          # criativo / visual
+    - trafego.md         # tráfego pago
+  tasks:
+    - diagnose.md
+    - build-message.md
+    - write-copy.md
+    - create-creatives.md
+    - build-traffic.md
+    - review.md
+  workflows:
+    - wf-full-campaign.yaml
+    - wf-launch.yaml
+  checklists:
+    - output-quality.md
+
+config:
+  extends: extend
+
+# ═══════════════════════════════════════════════════════════════════
+# AgencIA — linha de montagem: mensagem → copy → criativo → tráfego
+#   Tier 0: orquestrador (diagnostica, roteia, revisa)
+#   Tier 1: branding · copy · design · trafego
+# ═══════════════════════════════════════════════════════════════════
