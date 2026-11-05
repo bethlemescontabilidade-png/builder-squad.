@@ -1,0 +1,265 @@
+name: builder-squad
+version: "0.10.0-rc.2"
+short-title: "Builder Squad"
+description: >-
+  Sistema multiagente task-first para diagnosticar, planejar, construir, validar
+  e preparar para operação ou mercado apps, sistemas, agentes e automações.
+author: "SOW HOUSE PRODUCOES E TREINAMENTOS LTDA"
+license: UNLICENSED
+slashPrefix: builder
+
+aios:
+  minVersion: "4.0.0"
+  type: squad
+
+tags:
+  - ai-builder
+  - product-development
+  - orchestration
+  - task-first
+  - vibe-coding
+  - agents
+  - automation
+  - proprietary
+
+components:
+  agents:
+    - builder-chief.md
+    - product-strategist.md
+    - process-analyst.md
+    - project-manager.md
+    - solution-architect.md
+    - ux-ui-designer.md
+    - data-architect.md
+    - backend-engineer.md
+    - frontend-engineer.md
+    - agent-architect.md
+    - automation-integration-engineer.md
+    - qa-engineer.md
+    - security-reviewer.md
+    - devops-release-engineer.md
+    - growth-sales-strategist.md
+    - documentation-handoff-specialist.md
+  tasks:
+    - start-project.md
+    - classify-project.md
+    - create-canonical-brief.md
+    - route-project.md
+    - report-project-status.md
+    - resume-project.md
+    - correct-course.md
+    - close-project.md
+    - validate-market-problem.md
+    - define-ideal-customer.md
+    - define-value-proposition.md
+    - scope-market-mvp.md
+    - define-monetization.md
+    - map-current-process.md
+    - design-future-process.md
+    - calculate-internal-roi.md
+    - plan-internal-adoption.md
+    - create-project-plan.md
+    - decompose-into-stories.md
+    - decompose-into-tasks.md
+    - identify-critical-path.md
+    - create-risk-register.md
+    - select-technical-stack.md
+    - design-system-architecture.md
+    - define-nonfunctional-requirements.md
+    - define-service-contracts.md
+    - record-architecture-decision.md
+    - map-user-journey.md
+    - design-user-flows.md
+    - create-interface-specification.md
+    - define-design-tokens.md
+    - review-usability-accessibility.md
+    - model-domain-data.md
+    - design-database-schema.md
+    - define-data-access.md
+    - plan-data-migration.md
+    - review-data-integrity.md
+    - plan-backend-implementation.md
+    - implement-backend-service.md
+    - implement-auth-and-permissions.md
+    - test-backend.md
+    - plan-frontend-implementation.md
+    - implement-user-interface.md
+    - integrate-frontend-services.md
+    - test-frontend.md
+    - design-ai-agent.md
+    - define-agent-context-and-tools.md
+    - create-agent-evaluation-suite.md
+    - review-agent-behavior.md
+    - map-integration.md
+    - design-automation.md
+    - implement-integration.md
+    - test-integration-resilience.md
+    - create-test-strategy.md
+    - review-story-readiness.md
+    - execute-quality-gate.md
+    - verify-regression.md
+    - create-threat-model.md
+    - review-application-security.md
+    - review-privacy-and-data.md
+    - issue-security-verdict.md
+    - create-release-plan.md
+    - configure-delivery-pipeline.md
+    - execute-approved-deploy.md
+    - execute-rollback.md
+    - verify-production.md
+    - design-market-offer.md
+    - define-pricing-hypothesis.md
+    - create-go-to-market-plan.md
+    - define-product-analytics.md
+    - review-growth-cycle.md
+    - create-user-guide.md
+    - create-operational-runbook.md
+    - prepare-client-handoff.md
+    - create-project-closure.md
+  workflows:
+    - wf-intake-and-classify.yaml
+    - wf-internal-tool.yaml
+    - wf-market-product.yaml
+    - wf-hybrid-evolution.yaml
+    - wf-client-delivery.yaml
+    - wf-agent-and-automation.yaml
+    - wf-brownfield-improvement.yaml
+    - wf-bug-and-recovery.yaml
+    - wf-security-review.yaml
+    - wf-release.yaml
+    - wf-growth-iteration.yaml
+    - wf-project-resume.yaml
+  checklists:
+    - intake-completeness.md
+    - handoff-quality.md
+    - orchestration-quality.md
+    - agent-safety.md
+    - architecture-fitness.md
+    - change-safety.md
+    - client-delivery.md
+    - closure-readiness.md
+    - commercial-ethics.md
+    - data-and-privacy.md
+    - data-readiness.md
+    - decision-quality.md
+    - growth-evidence.md
+    - handoff-readiness.md
+    - human-approval.md
+    - hybrid-portability.md
+    - implementation-quality.md
+    - implementation-readiness.md
+    - incident-recovery.md
+    - integration-readiness.md
+    - internal-value.md
+    - market-evidence.md
+    - market-readiness.md
+    - payment-readiness.md
+    - plan-readiness.md
+    - quality-verdict.md
+    - release-readiness.md
+    - scope-readiness.md
+    - security-readiness.md
+    - story-readiness.md
+    - ux-readiness.md
+  templates:
+    - intake-questionnaire.md
+    - canonical-brief.md
+    - handoff.md
+    - decision-record.md
+    - task-contract.md
+    - project-manifest.yaml
+    - project-status.yaml
+    - scope-baseline.md
+    - discovery-evidence.md
+    - process-map.md
+    - project-plan.md
+    - story.md
+    - risk-register.md
+    - architecture-spec.md
+    - service-contract.md
+    - ux-spec.md
+    - data-model.md
+    - agent-spec.md
+    - automation-spec.md
+    - test-strategy.md
+    - quality-report.md
+    - security-review.md
+    - release-plan.md
+    - gtm-plan.md
+    - analytics-plan.md
+    - runbook.md
+    - user-guide.md
+    - acceptance-record.md
+    - project-closure.md
+    - incident-report.md
+    - change-request.md
+    - experiment-record.md
+    - project-charter.md
+    - prd.md
+    - decision-log.md
+    - rollback-plan.md
+  data:
+    - project-ontology.yaml
+    - routing-catalog.yaml
+    - state-machine.yaml
+
+config:
+  extends: none
+  runtime: config/config.yaml
+
+distribution:
+  visibility: private
+  commercial: true
+  adapters:
+    - codex
+    - claude-code
+
+entrypoint:
+  agent: builder-chief
+  command: "*start-project"
+
+governance:
+  human_in_the_loop: true
+  max_automatic_retries: 2
+  verdicts:
+    - PASS
+    - CONCERNS
+    - FAIL
+    - BLOCKED
+
+tooling:
+  runtime: node>=18
+  zero_runtime_dependencies: true
+  cli: scripts/builder-squad.mjs
+  commands:
+    - validate
+    - doctor
+    - route
+    - init
+    - status
+    - transition
+    - handoff
+    - package
+    - install
+    - update
+    - restore
+    - uninstall
+  automations:
+    - intake-bootstrap.yaml
+    - route-selection.yaml
+    - state-transition.yaml
+    - handoff-dispatch.yaml
+    - quality-gate.yaml
+    - retry-recovery.yaml
+    - release-approval.yaml
+    - project-resume.yaml
+    - artifact-index.yaml
+  adapters:
+    - codex
+    - claude-code
+  schemas:
+    - project.schema.json
+    - status.schema.json
+    - task.schema.json
+    - handoff.schema.json
+    - decision.schema.json

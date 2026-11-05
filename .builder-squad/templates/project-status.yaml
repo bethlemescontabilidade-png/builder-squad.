@@ -1,0 +1,19 @@
+schema_version: "1.0.0"
+project_id: "{{project_id}}"
+state: NEW
+current_phase: "{{phase_id}}"
+current_task: null
+current_owner: null
+completed_tasks: []
+open_findings: []
+blocker: null
+retry_count: 0
+latest_verdicts:
+  quality: null
+  security: null
+  release: null
+next:
+  task: "{{task_id}}"
+  owner: "{{agent_id}}"
+  condition: "{{entry_condition}}"
+updated_at: "{{timestamp}}"
